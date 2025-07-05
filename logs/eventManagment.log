@@ -1,1 +1,15 @@
-{"level":"info","ts":"2025-07-05T11:10:43.678+0300","msg":"Loaded config: host=localhost, port=5432, name=myappdb"}
+{"level":"error","ts":"2025-07-05T18:03:22.392+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:06:53.250+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:07:22.348+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:07:44.376+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"fatal","ts":"2025-07-05T18:07:44.376+0300","msg":"goose up failed: ./migrations directory does not exist"}
+{"level":"error","ts":"2025-07-05T18:08:11.756+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:09:39.777+0300","msg":"pq: database \"eventManagmentdb\" does not exist"}
+{"level":"error","ts":"2025-07-05T18:09:43.925+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:10:56.719+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:10:58.964+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"error","ts":"2025-07-05T18:11:28.025+0300","msg":"pq: database \"eventmanagmentdb\" already exists"}
+{"level":"fatal","ts":"2025-07-05T18:12:02.306+0300","msg":"Failed to connect to DB: pq: database \"eventmanagmentdb\" already exists"}
+{"level":"fatal","ts":"2025-07-05T18:12:43.400+0300","msg":"Failed to connect to DB: pq: database \"eventManagmentdb\" does not exist"}
+{"level":"fatal","ts":"2025-07-05T18:13:15.638+0300","msg":"Failed to connect to DB: pq: database \"eventManagmentdb\" does not exist"}
+{"level":"fatal","ts":"2025-07-05T18:13:29.648+0300","msg":"goose up failed: ERROR 20250705065505_user.sql: failed to run SQL migration: failed to execute SQL query \"CREATE TABLE user_tbl (\\n    id INT NOT NULL PRIMARY KEY,\\n    email VARCHAR NOT NULL,\\n    fullName VARCHAR NOT NULL,\\n    PASSWORD VARCHAR NOT NULL,\\n);\\n\": pq: syntax error at or near \")\""}

@@ -5,6 +5,11 @@ go 1.24.4
 require github.com/golang-migrate/migrate/v4 v4.18.3
 
 require (
+	github.com/lib/pq v1.10.9 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+)
+
+require (
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
 	github.com/google/uuid v1.6.0 // indirect
@@ -14,6 +19,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/mfridman/interpolate v0.0.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
+	github.com/pressly/goose v2.7.0+incompatible
 	github.com/pressly/goose/v3 v3.24.3 // indirect
 	github.com/sagikazarmark/locafero v0.7.0 // indirect
 	github.com/sethvargo/go-retry v0.3.0 // indirect
