@@ -1,0 +1,16 @@
+services:
+  database:
+    container_name: postgressdb
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=pgadmin
+      - POSTGRES_PASSWORD=SecretPassword!
+      - POSTGRES_DB=eventManagmentdb
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data 
+
+volumes:
+  db:
