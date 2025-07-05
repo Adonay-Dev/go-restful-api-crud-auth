@@ -1,0 +1,55 @@
+# Binaries for programs and plugins
+/bin/
+/build/
+/dist/
+/tmp/
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+
+# Test binary, build outputs
+*.test
+*.out
+
+# Vendor directory (if you vendor dependencies)
+/vendor/
+
+# Go workspace file
+go.work
+
+# Dependency directories (remove if using Go Modules)
+/Godeps/
+/_glide/
+/vendor/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+eventManagment.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage files
+coverage.out
+
+# Environment files
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Misc
+*.cache
+*.pid

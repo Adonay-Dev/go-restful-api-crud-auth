@@ -1,0 +1,34 @@
+root = "."
+tmp_dir = "tmp"
+# Build command: compile binary from cmd/main.go into build/
+build = "go build -o ./build/go-restful-api-crud-auth ./cmd/main.go"
+
+# Path to the binary Air will run after build
+bin = "./build/go-restful-api-crud-auth"
+
+# Directories and files Air watches for changes to trigger rebuild/restart
+[watch]
+include = [
+  "cmd",
+  "internal",
+  "model",
+  "repository",
+  "migrations",
+  "go.mod",
+  "go.sum"
+]
+exclude = [
+  "tmp",
+  "logs",
+  "vendor"
+]
+
+# Delay (in milliseconds) after file changes before rebuild/restart
+delay = 1000
+
+# Color settings for Air output (helps visually distinguish logs)
+[color]
+main = "yellow"
+watcher = "cyan"
+build = "green"
+runner = "magenta"
