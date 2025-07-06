@@ -6,9 +6,11 @@ import (
 	"go-rest-api/internal/config"
 	"go-rest-api/internal/database"
 	"go-rest-api/internal/logger"
+	"go-rest-api/internal/routes"
 	"os"
 	"path/filepath"
 
+	"github.com/gofiber/fiber/v2"
 	"github.com/pressly/goose"
 )
 
@@ -59,9 +61,14 @@ func main() {
 			log.Fatalf("Unknown action: %s", *action)
 		}
 	}
-	startServer()
+	app := startServer()
+	routes.Routes(app)
+	log.Infof("Starting server on :3000")
+	if err := app.Listen(":3000"); err != nil {
+		log.Fatalf("Failed to start server: %v", err)
+	}
 }
 
-func startServer() {
-	fmt.Print("Server Running...")
+func startServer() *fiber.App {
+	return fiber.New()
 }
